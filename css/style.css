@@ -130,6 +130,15 @@ nav {
 /* Hero */
 
 .hero {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url("../images/people-office.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   padding-top: 188px;
   padding-bottom: 188px;
   text-align: center;
@@ -181,6 +190,19 @@ nav {
 
 .about-item {
   flex-basis: calc((100% - 72px) / 4);
+}
+
+.about-picture {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f4f4fd;
+  border-radius: 4px;
+  padding: 24px 100px;
+}
+.about-svg {
+  height: 64px;
+  width: 64px;
 }
 
 .section-subtitle {
@@ -251,11 +273,91 @@ nav {
   margin-bottom: 8px;
 }
 
-/* Footer */
+.persone-text {
+  margin-bottom: 8px;
+}
+
+.social-list {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+.social-link {
+  display: flex;
+  align-content: center;
+  justify-items: center;
+  padding: 12px;
+  background-color: #4d5ae5;
+  border-radius: 50%;
+  fill: var(--clr-smoke);
+}
+
+.social-link:hover {
+  background-color: #404bbf;
+}
+
+.social-icon {
+  width: 16px;
+  height: 16px;
+}
+
+/* CUSTOMERS */
+
+.customers {
+  padding-top: 130px;
+  padding-bottom: 120px;
+}
+
+.customers-title {
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 36px;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  margin-bottom: 72px;
+}
+
+.customer-list {
+  display: flex;
+  gap: 24px;
+}
+
+/* #404bbf */
+
+.customers-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px 32px;
+  border: 1px solid #8e8f99;
+  border-radius: 4px;
+}
+
+.customers-link:hover {
+  border: 1px solid #404bbf;
+}
+
+.customers-icon {
+  width: 104px;
+  height: 56px;
+  fill: #8e8f99;
+}
+
+.customers-icon:hover {
+  fill: #404bbf;
+}
+
+/* FOOTER */
 
 .footer {
   padding: 100px 0;
   background-color: var(--clr-theme);
+}
+
+.footer-container {
+  display: flex;
+  gap: 120px;
 }
 
 .logo-footer {
@@ -271,6 +373,33 @@ nav {
 
 .logo-clr-foot {
   color: var(--clr-smoke);
+}
+
+.footer-title {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  color: var(--clr-white);
+  margin-bottom: 16px;
+}
+
+.footer-link {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.footer-link:hover {
+  background-color: #31d0aa;
+}
+
+.social-footer {
+  display: block;
+  width: 24px;
+  height: 24px;
 }
 
 /* PORTFOLIO */
@@ -319,6 +448,11 @@ nav {
   flex-basis: calc((100% - 48px) / 3);
 }
 
+.project-link:hover {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+
 .project-container {
   border-bottom: 1px solid var(--clr-border);
   border-left: 1px solid var(--clr-border);
@@ -328,6 +462,6 @@ nav {
   padding-left: 16px;
 }
 
-.project-container .text {
+.project-container .project-container .text {
   margin-top: 8px;
 }
