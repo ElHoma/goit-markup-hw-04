@@ -139,6 +139,8 @@ nav {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  max-width: 1140px;
+  margin: 0 auto;
   padding-top: 188px;
   padding-bottom: 188px;
   text-align: center;
@@ -198,7 +200,7 @@ nav {
   justify-content: center;
   background-color: #f4f4fd;
   border-radius: 4px;
-  padding: 24px 100px;
+  height: 112px;
 }
 .about-svg {
   height: 64px;
@@ -282,17 +284,25 @@ nav {
   justify-content: center;
   gap: 24px;
 }
+
+.social-item {
+  width: 40px;
+  height: 40px;
+}
+
 .social-link {
   display: flex;
-  align-content: center;
-  justify-items: center;
-  padding: 12px;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
   background-color: #4d5ae5;
   border-radius: 50%;
   fill: var(--clr-smoke);
 }
 
-.social-link:hover {
+.social-link:hover,
+.social-link:focus {
   background-color: #404bbf;
 }
 
@@ -325,26 +335,29 @@ nav {
 
 /* #404bbf */
 
+.customer-item {
+  width: calc((100% - 120px) / 5);
+  gap: 24px;
+}
+
 .customers-link {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 16px 32px;
+  height: 88px;
+  width: 100%;
   border: 1px solid #8e8f99;
   border-radius: 4px;
-}
-
-.customers-link:hover {
-  border: 1px solid #404bbf;
+  fill: #8e8f99;
 }
 
 .customers-icon {
   width: 104px;
   height: 56px;
-  fill: #8e8f99;
 }
 
-.customers-icon:hover {
+.customers-link:hover {
+  border-color: #404bbf;
   fill: #404bbf;
 }
 
@@ -392,7 +405,8 @@ nav {
   background-color: rgba(255, 255, 255, 0.1);
 }
 
-.footer-link:hover {
+.footer-link:hover,
+.footer-link:focus {
   background-color: #31d0aa;
 }
 
@@ -431,7 +445,8 @@ nav {
   padding: 12px 24px 12px 24px;
 }
 
-.filter-btn:hover {
+.filter-btn:hover,
+.filter-btn:focus {
   background-color: #404bbf;
   color: #ffffff;
 }
